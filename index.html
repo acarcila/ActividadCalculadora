@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="o-div-calculator">
+        <span class="o-span-uao">UAO</span>
+        <h1 class="o-h1-calculator">CALCULATOR</h1>
+        <form action="controller.js" class="o-form">
+            <div class="o-div-inputs">
+                <div class="o-div-input-number">
+                    <label for="num1" class="o-label">Número 1</label>
+                    <input type="number" id="num1" class="o-input-number">
+                </div>
+                <div class="o-div-input-number">
+                    <label for="num2" class="o-label">Número 2</label>
+                    <input type="number" id="num2" min="none" max="none" class="o-input-number">
+                </div>
+                <div class="o-div-select-operation">
+                    <label for="operation" class="o-label">Operación</label>
+                    <div class="o-div-select-wrapper">
+                        <select id="operation" class="o-select-operation">
+                            <option value="suma">Suma</option>
+                            <option value="resta">Resta</option>
+                            <option value="multiplicacion">Multiplcación</option>
+                            <option value="division">División</option>
+                        </select>
+                        <img src="https://image.flaticon.com/icons/svg/625/625946.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="=" class="o-input-submit">
+            <div class="o-div-result">
+                <label for="numResult" class="o-label">Resultado</label>
+                <h1 id="numResult" class="o-h1-result">0</h1>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

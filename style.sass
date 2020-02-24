@@ -1,0 +1,118 @@
+$fontSize1: 3rem
+$backgroundColor: #F6FAFD
+$darkColor: #2F4251
+$greyColor: #BBC7D6
+$redColor: #F70025
+    
+html
+    width: 100%
+    height: 100%
+
+body
+    margin: 0
+    padding: 1rem
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Roboto'
+    font-size: 16px
+    background-color: $backgroundColor
+
+.o-div-calculator
+    display: flex
+    flex-direction: column
+
+.o-span-uao
+    font-size: $fontSize1
+    color: $darkColor
+    line-height: 3.5rem
+
+.o-h1-calculator
+    font-size: $fontSize1
+    color: $darkColor
+    line-height: 3.5rem
+    margin: 0 0 2.75rem 0
+
+.o-form
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+
+.o-label
+    font-size: 14px
+    line-height: 16px
+    color: $greyColor
+    margin-bottom: 0.4rem 
+
+.o-div-inputs
+    width: 17rem
+    margin-right: 3rem
+
+    .o-div-input-number
+        display: flex
+        flex-direction: column
+        margin-bottom: 1.7rem
+
+        .o-input-number
+            border: none
+            border-bottom: 1px solid #52729E
+            background-color: transparent
+            font-size: $fontSize1
+            line-height: 3.5rem
+            color: $darkColor
+
+    .o-div-select-operation
+        display: flex
+        flex-direction: column
+        margin-top: 4rem
+
+        .o-div-select-wrapper
+            position: relative
+            display: flex
+            align-items: center
+            
+            img
+                position: absolute
+                right: 29px
+                height: 40%
+                filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%) hue-rotate(160deg) brightness(105%) contrast(106%)
+
+        .o-select-operation
+            width: 100%
+            border: none
+            background-color: $darkColor
+            text-align-last: center
+            font-size: 1.5rem
+            line-height: 28px
+            color: white
+            border-radius: 30px
+            padding: 0.7rem 0
+            appearance: none
+
+.o-input-submit
+    width: 10rem
+    padding: 0
+    border: none
+    background-color: $redColor
+    border-radius: 30px
+    color: white
+    font-size: 48px
+    line-height: 56px
+    margin: 0 2rem
+
+
+.o-div-result
+    width: 17rem
+    background-color: white
+    border-radius: 21px
+    box-shadow: 0px 4px 25px rgba(100, 168, 221, 0.23)
+    padding: 50px
+
+    .o-h1-result
+        margin: 0
+        font-size: 72px
+        line-height: 84px
+        color: $darkColor
