@@ -7,12 +7,13 @@ $redColor: #F70025
 html
     width: 100%
     height: 100%
+    // display: flex
+    // justify-content: center
+    // align-items: center
 
 body
     margin: 0
     padding: 1rem
-    width: 100%
-    height: 100%
     display: flex
     justify-content: center
     align-items: center
@@ -23,6 +24,7 @@ body
 .o-div-calculator
     display: flex
     flex-direction: column
+    overflow: hidden
 
 .o-span-uao
     font-size: $fontSize1
@@ -42,6 +44,7 @@ body
     flex-wrap: wrap
 
 .o-label
+    width: max-content
     font-size: 14px
     line-height: 16px
     color: $greyColor
@@ -49,8 +52,6 @@ body
 
 .o-div-inputs
     width: 17rem
-    margin-right: 3rem
-
     .o-div-input-number
         display: flex
         flex-direction: column
@@ -101,18 +102,33 @@ body
     color: white
     font-size: 48px
     line-height: 56px
-    margin: 0 2rem
+    margin: 2.5rem 2rem 2.5rem 5rem
 
 
 .o-div-result
     width: 17rem
+    display: flex
+    flex-direction: column
     background-color: white
     border-radius: 21px
     box-shadow: 0px 4px 25px rgba(100, 168, 221, 0.23)
     padding: 50px
 
-    .o-h1-result
+    .o-p-result
+        width: max-content
         margin: 0
         font-size: 72px
-        line-height: 84px
+        line-height: 3.5rem
         color: $darkColor
+        font-weight: bold
+
+@media only screen and (max-width: 600px)
+    
+    .o-div-inputs, .o-div-result
+        width: 100%
+
+    .o-input-submit
+        margin: 2.5rem
+
+    .o-div-result
+        align-items: center
