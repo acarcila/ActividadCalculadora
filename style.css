@@ -119,6 +119,7 @@ body {
   height: 40%;
   -webkit-filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%) hue-rotate(160deg) brightness(105%) contrast(106%);
           filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%) hue-rotate(160deg) brightness(105%) contrast(106%);
+  pointer-events: none;
 }
 
 .o-div-inputs .o-div-select-operation .o-select-operation {
@@ -136,7 +137,13 @@ body {
           appearance: none;
 }
 
-.o-input-submit {
+.o-div-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 10rem;
   padding: 0;
   border: none;
@@ -146,6 +153,7 @@ body {
   font-size: 48px;
   line-height: 56px;
   margin: 2.5rem 2rem 2.5rem 5rem;
+  cursor: pointer;
 }
 
 .o-div-result {
@@ -175,11 +183,14 @@ body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 970px) {
   .o-div-inputs, .o-div-result {
     width: 100%;
   }
-  .o-input-submit {
+  .o-div-inputs .o-div-select-operation .o-div-select-wrapper img {
+    right: 30%;
+  }
+  .o-div-submit {
     margin: 2.5rem;
   }
   .o-div-result {

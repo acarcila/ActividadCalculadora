@@ -13,6 +13,7 @@ html
 
 body
     margin: 0
+    // height: 100%
     padding: 1rem
     display: flex
     justify-content: center
@@ -52,6 +53,7 @@ body
 
 .o-div-inputs
     width: 17rem
+
     .o-div-input-number
         display: flex
         flex-direction: column
@@ -80,6 +82,7 @@ body
                 right: 29px
                 height: 40%
                 filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%) hue-rotate(160deg) brightness(105%) contrast(106%)
+                pointer-events: none
 
         .o-select-operation
             width: 100%
@@ -93,7 +96,9 @@ body
             padding: 0.7rem 0
             appearance: none
 
-.o-input-submit
+.o-div-submit
+    display: flex
+    justify-content: center
     width: 10rem
     padding: 0
     border: none
@@ -103,6 +108,7 @@ body
     font-size: 48px
     line-height: 56px
     margin: 2.5rem 2rem 2.5rem 5rem
+    cursor: pointer
 
 
 .o-div-result
@@ -122,12 +128,18 @@ body
         color: $darkColor
         font-weight: bold
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 970px)
     
     .o-div-inputs, .o-div-result
         width: 100%
 
-    .o-input-submit
+    .o-div-inputs
+        .o-div-select-operation
+            .o-div-select-wrapper
+                img
+                    right: 30%
+
+    .o-div-submit
         margin: 2.5rem
 
     .o-div-result
